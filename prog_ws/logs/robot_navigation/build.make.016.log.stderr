@@ -1,0 +1,31 @@
+[01m[K/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/src/robot_navigation/src/stack_navigation.cpp:[m[K In function ‘[01m[Kvoid setGoal_CallBack(const new_goal&)[m[K’:
+[01m[K/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/src/robot_navigation/src/stack_navigation.cpp:50:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Knew_goal_message[m[K’
+     [01;31m[Knew_goal_message[m[K.pose.position.x=new_goal.x;
+     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/src/robot_navigation/src/stack_navigation.cpp:52:36:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kgeometry_msgs::Pose_<std::allocator<void> >::_position_type {aka geometry_msgs::Point_<std::allocator<void> >}[m[K’ and ‘[01m[Kint[m[K’)
+     new_goal_message.pose.position=[01;31m[K0[m[K;
+                                    [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/geometry_msgs/Pose.h:18:0[m[K,
+                 from [01m[K/opt/ros/melodic/include/geometry_msgs/PoseWithCovariance.h:18[m[K,
+                 from [01m[K/opt/ros/melodic/include/nav_msgs/Odometry.h:19[m[K,
+                 from [01m[K/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/src/robot_navigation/src/stack_navigation.cpp:2[m[K:
+[01m[K/opt/ros/melodic/include/geometry_msgs/Point.h:22:8:[m[K [01;36m[Knote: [m[Kcandidate: constexpr geometry_msgs::Point_<std::allocator<void> >& geometry_msgs::Point_<std::allocator<void> >::operator=(const geometry_msgs::Point_<std::allocator<void> >&)
+ struct [01;36m[KPoint_[m[K
+        [01;36m[K^~~~~~[m[K
+[01m[K/opt/ros/melodic/include/geometry_msgs/Point.h:22:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kint[m[K’ to ‘[01m[Kconst geometry_msgs::Point_<std::allocator<void> >&[m[K’
+[01m[K/opt/ros/melodic/include/geometry_msgs/Point.h:22:8:[m[K [01;36m[Knote: [m[Kcandidate: constexpr geometry_msgs::Point_<std::allocator<void> >& geometry_msgs::Point_<std::allocator<void> >::operator=(geometry_msgs::Point_<std::allocator<void> >&&)
+[01m[K/opt/ros/melodic/include/geometry_msgs/Point.h:22:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kint[m[K’ to ‘[01m[Kgeometry_msgs::Point_<std::allocator<void> >&&[m[K’
+[01m[K/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/src/robot_navigation/src/stack_navigation.cpp:56:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeometry_msgs::Pose_<std::allocator<void> >::_orientation_type {aka struct geometry_msgs::Quaternion_<std::allocator<void> >}[m[K’ has no member named ‘[01m[Ktheta[m[K’
+     new_goal_message.pose.orientation.[01;31m[Ktheta[m[K=0;
+                                       [01;31m[K^~~~~[m[K
+[01m[K/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/src/robot_navigation/src/stack_navigation.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/src/robot_navigation/src/stack_navigation.cpp:122:53:[m[K [01;31m[Kerror: [m[K‘[01m[KSetGoal_CallBack[m[K’ was not declared in this scope
+     ros::Subscriber sub=n.subscribe("new_goal",1000,[01;31m[KSetGoal_CallBack[m[K);
+                                                     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/src/robot_navigation/src/stack_navigation.cpp:122:53:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KsetGoal_CallBack[m[K’
+     ros::Subscriber sub=n.subscribe("new_goal",1000,[01;36m[KSetGoal_CallBack[m[K);
+                                                     [01;36m[K^~~~~~~~~~~~~~~~[m[K
+                                                     [32m[KsetGoal_CallBack[m[K
+make[2]: *** [CMakeFiles/Set_Goal.dir/src/stack_navigation.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Set_Goal.dir/all] Error 2
+make: *** [all] Error 2

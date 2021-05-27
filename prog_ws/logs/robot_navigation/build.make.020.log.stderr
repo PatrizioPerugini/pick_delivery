@@ -1,0 +1,16 @@
+CMakeFiles/Set_Goal.dir/src/stack_navigation.cpp.o: In function `position_CallBack(tf2_msgs::TFMessage_<std::allocator<void> > const&)':
+stack_navigation.cpp:(.text+0x1be): undefined reference to `tf2::BufferCore::canTransform(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, ros::Time const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*) const'
+stack_navigation.cpp:(.text+0x2b8): undefined reference to `tf2::BufferCore::lookupTransform(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, ros::Time const&) const'
+CMakeFiles/Set_Goal.dir/src/stack_navigation.cpp.o: In function `main':
+stack_navigation.cpp:(.text+0xc60): undefined reference to `tf2_ros::TransformListener::TransformListener(tf2::BufferCore&, bool)'
+stack_navigation.cpp:(.text+0x118e): undefined reference to `tf2_ros::TransformListener::~TransformListener()'
+CMakeFiles/Set_Goal.dir/src/stack_navigation.cpp.o: In function `__static_initialization_and_destruction_0(int, int)':
+stack_navigation.cpp:(.text+0x13ae): undefined reference to `tf2_ros::Buffer::Buffer(ros::Duration, bool)'
+CMakeFiles/Set_Goal.dir/src/stack_navigation.cpp.o: In function `tf2_ros::Buffer::~Buffer()':
+stack_navigation.cpp:(.text._ZN7tf2_ros6BufferD2Ev[_ZN7tf2_ros6BufferD5Ev]+0xf): undefined reference to `vtable for tf2_ros::Buffer'
+stack_navigation.cpp:(.text._ZN7tf2_ros6BufferD2Ev[_ZN7tf2_ros6BufferD5Ev]+0x1d): undefined reference to `vtable for tf2_ros::Buffer'
+stack_navigation.cpp:(.text._ZN7tf2_ros6BufferD2Ev[_ZN7tf2_ros6BufferD5Ev]+0x47): undefined reference to `tf2::BufferCore::~BufferCore()'
+collect2: error: ld returned 1 exit status
+make[2]: *** [/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/devel/.private/robot_navigation/lib/robot_navigation/Set_Goal] Error 1
+make[1]: *** [CMakeFiles/Set_Goal.dir/all] Error 2
+make: *** [all] Error 2

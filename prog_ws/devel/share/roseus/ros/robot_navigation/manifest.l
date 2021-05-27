@@ -1,0 +1,1 @@
+/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/devel/.private/robot_navigation/share/roseus/ros/robot_navigation/manifest.l

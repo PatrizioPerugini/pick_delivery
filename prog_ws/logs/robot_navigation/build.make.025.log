@@ -1,0 +1,30 @@
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target _robot_navigation_generate_messages_check_deps_new_goal
+[ 11%] Built target robot_navigation_generate_messages_lisp
+[ 22%] Built target robot_navigation_generate_messages_cpp
+[ 44%] Built target robot_navigation_generate_messages_eus
+[ 55%] Built target robot_navigation_generate_messages_nodejs
+[ 77%] Built target robot_navigation_generate_messages_py
+[35m[1mScanning dependencies of target Set_Goal[0m
+[ 77%] Built target robot_navigation_generate_messages
+[ 88%] [32mBuilding CXX object CMakeFiles/Set_Goal.dir/src/stack_navigation.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/devel/.private/robot_navigation/lib/robot_navigation/Set_Goal[0m
+CMakeFiles/Set_Goal.dir/src/stack_navigation.cpp.o: In function `main':
+stack_navigation.cpp:(.text+0xc60): undefined reference to `tf2_ros::TransformListener::TransformListener(tf2::BufferCore&, bool)'
+stack_navigation.cpp:(.text+0x118e): undefined reference to `tf2_ros::TransformListener::~TransformListener()'
+CMakeFiles/Set_Goal.dir/src/stack_navigation.cpp.o: In function `__static_initialization_and_destruction_0(int, int)':
+stack_navigation.cpp:(.text+0x13ae): undefined reference to `tf2_ros::Buffer::Buffer(ros::Duration, bool)'
+CMakeFiles/Set_Goal.dir/src/stack_navigation.cpp.o: In function `tf2_ros::Buffer::~Buffer()':
+stack_navigation.cpp:(.text._ZN7tf2_ros6BufferD2Ev[_ZN7tf2_ros6BufferD5Ev]+0xf): undefined reference to `vtable for tf2_ros::Buffer'
+stack_navigation.cpp:(.text._ZN7tf2_ros6BufferD2Ev[_ZN7tf2_ros6BufferD5Ev]+0x1d): undefined reference to `vtable for tf2_ros::Buffer'
+collect2: error: ld returned 1 exit status
+CMakeFiles/Set_Goal.dir/build.make:113: recipe for target '/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/devel/.private/robot_navigation/lib/robot_navigation/Set_Goal' failed
+make[2]: *** [/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/devel/.private/robot_navigation/lib/robot_navigation/Set_Goal] Error 1
+CMakeFiles/Makefile2:67: recipe for target 'CMakeFiles/Set_Goal.dir/all' failed
+make[1]: *** [CMakeFiles/Set_Goal.dir/all] Error 2
+Makefile:140: recipe for target 'all' failed
+make: *** [all] Error 2

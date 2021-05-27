@@ -1,0 +1,1 @@
+/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/devel/.private/robot_navigation/share/robot_navigation/cmake/robot_navigationConfig.cmake

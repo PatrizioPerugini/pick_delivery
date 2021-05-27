@@ -1,0 +1,1 @@
+/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/devel/.private/catkin_tools_prebuild/env.sh
