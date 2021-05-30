@@ -1,0 +1,56 @@
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target _robot_navigation_generate_messages_check_deps_new_goal
+[ 11%] Built target robot_navigation_generate_messages_lisp
+[ 44%] Built target robot_navigation_generate_messages_nodejs
+[ 44%] Built target robot_navigation_generate_messages_eus
+[ 66%] Built target robot_navigation_generate_messages_cpp
+[ 77%] Built target robot_navigation_generate_messages_py
+[35m[1mScanning dependencies of target Set_Goal[0m
+[ 77%] Built target robot_navigation_generate_messages
+[ 88%] [32mBuilding CXX object CMakeFiles/Set_Goal.dir/src/stack_navigation.cpp.o[0m
+[01m[K/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/src/robot_navigation/src/stack_navigation.cpp:50:1:[m[K [01;31m[Kerror: [m[K‘[01m[Khome[m[K’ does not name a type
+ [01;31m[Khome[m[K.header.seq=n;
+ [01;31m[K^~~~[m[K
+[01m[K/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/src/robot_navigation/src/stack_navigation.cpp:51:1:[m[K [01;31m[Kerror: [m[K‘[01m[Khome[m[K’ does not name a type
+ [01;31m[Khome[m[K.header.stamp=ros::Time::now();
+ [01;31m[K^~~~[m[K
+[01m[K/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/src/robot_navigation/src/stack_navigation.cpp:52:1:[m[K [01;31m[Kerror: [m[K‘[01m[Khome[m[K’ does not name a type
+ [01;31m[Khome[m[K.header.frame_id="map"; //boh
+ [01;31m[K^~~~[m[K
+[01m[K/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/src/robot_navigation/src/stack_navigation.cpp:53:1:[m[K [01;31m[Kerror: [m[K‘[01m[Khome[m[K’ does not name a type
+ [01;31m[Khome[m[K.pose.position.x=50.84;
+ [01;31m[K^~~~[m[K
+[01m[K/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/src/robot_navigation/src/stack_navigation.cpp:54:1:[m[K [01;31m[Kerror: [m[K‘[01m[Khome[m[K’ does not name a type
+ [01;31m[Khome[m[K.pose.position.y=11.87;
+ [01;31m[K^~~~[m[K
+[01m[K/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/src/robot_navigation/src/stack_navigation.cpp:55:1:[m[K [01;31m[Kerror: [m[K‘[01m[Khome[m[K’ does not name a type
+ [01;31m[Khome[m[K.pose.position.z=0;
+ [01;31m[K^~~~[m[K
+[01m[K/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/src/robot_navigation/src/stack_navigation.cpp:56:1:[m[K [01;31m[Kerror: [m[K‘[01m[Khome[m[K’ does not name a type
+ [01;31m[Khome[m[K.pose.orientation.x=0;
+ [01;31m[K^~~~[m[K
+[01m[K/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/src/robot_navigation/src/stack_navigation.cpp:57:1:[m[K [01;31m[Kerror: [m[K‘[01m[Khome[m[K’ does not name a type
+ [01;31m[Khome[m[K.pose.orientation.y=0;
+ [01;31m[K^~~~[m[K
+[01m[K/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/src/robot_navigation/src/stack_navigation.cpp:58:1:[m[K [01;31m[Kerror: [m[K‘[01m[Khome[m[K’ does not name a type
+ [01;31m[Khome[m[K.pose.orientation.z=0;
+ [01;31m[K^~~~[m[K
+[01m[K/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/src/robot_navigation/src/stack_navigation.cpp:59:1:[m[K [01;31m[Kerror: [m[K‘[01m[Khome[m[K’ does not name a type
+ [01;31m[Khome[m[K.pose.orientation.w=0.02;
+ [01;31m[K^~~~[m[K
+[01m[K/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/src/robot_navigation/src/stack_navigation.cpp:61:1:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_position[m[K’ does not name a type
+ [01;31m[Ktarget_position[m[K[0]=50.84;
+ [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/src/robot_navigation/src/stack_navigation.cpp:62:1:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_position[m[K’ does not name a type
+ [01;31m[Ktarget_position[m[K[1]=11.87;
+ [01;31m[K^~~~~~~~~~~~~~~[m[K
+CMakeFiles/Set_Goal.dir/build.make:62: recipe for target 'CMakeFiles/Set_Goal.dir/src/stack_navigation.cpp.o' failed
+make[2]: *** [CMakeFiles/Set_Goal.dir/src/stack_navigation.cpp.o] Error 1
+CMakeFiles/Makefile2:67: recipe for target 'CMakeFiles/Set_Goal.dir/all' failed
+make[1]: *** [CMakeFiles/Set_Goal.dir/all] Error 2
+Makefile:140: recipe for target 'all' failed
+make: *** [all] Error 2

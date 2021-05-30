@@ -1,0 +1,10 @@
+[01m[K/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/src/robot_navigation/src/stack_navigation.cpp:[m[K In function ‘[01m[Kvoid check1_callBack(const ros::TimerEvent&)[m[K’:
+[01m[K/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/src/robot_navigation/src/stack_navigation.cpp:106:23:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Ksubscribe[m[K’ in ‘[01m[Kn[m[K’, which is of non-class type ‘[01m[Ksize_t {aka long unsigned int}[m[K’
+                 sub=n.[01;31m[Ksubscribe[m[K("new_goal",1000,go_home);
+                       [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/src/robot_navigation/src/stack_navigation.cpp:106:49:[m[K [01;31m[Kerror: [m[K‘[01m[Kgo_home[m[K’ was not declared in this scope
+                 sub=n.subscribe("new_goal",1000,[01;31m[Kgo_home[m[K);
+                                                 [01;31m[K^~~~~~~[m[K
+make[2]: *** [CMakeFiles/Set_Goal.dir/src/stack_navigation.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Set_Goal.dir/all] Error 2
+make: *** [all] Error 2

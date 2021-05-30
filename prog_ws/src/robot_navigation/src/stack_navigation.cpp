@@ -32,6 +32,7 @@
 
 int T=1;
 geometry_msgs::PoseStamped new_goal_message;
+geometry_msgs::PoseStamped home;
 tf2_ros::Buffer tfBuffer;
 
 std::vector<float> target_position(2,0);
@@ -41,6 +42,31 @@ std::vector<float> current_position(2,0);
 size_t n=10;
 int message_published = 0;
 int cruising=0;
+
+
+int arrived=0;
+
+
+
+// home.header.seq=n;
+// home.header.stamp=ros::Time::now();
+// home.header.frame_id="map"; //boh
+// home.pose.position.x=50.84;
+// home.pose.position.y=11.87;
+// home.pose.position.z=0;
+// home.pose.orientation.x=0;
+// home.pose.orientation.y=0;
+// home.pose.orientation.z=0;
+// home.pose.orientation.w=0.02;
+//     //salvo la posizione nella quale devo andare 
+// target_position[0]=50.84;
+// target_position[1]=11.87;
+
+
+
+
+
+ros::Subscriber sub;
 
 void setGoal_CallBack(const robot_navigation::new_goal& new_goal){
     
@@ -61,10 +87,17 @@ void setGoal_CallBack(const robot_navigation::new_goal& new_goal){
     target_position[0]=new_goal_message.pose.position.x;
     target_position[1]=new_goal_message.pose.position.y;
 
+    ROS_INFO("nuovo target ricevuto, inzio navigazione");
+
     cruising=1;
+    arrived=0;
     message_published=1;
 
 }
+
+// void go_home(const robot_navigation::new_goal& new_goal){
+    
+// }
 void position_CallBack(const tf2_msgs::TFMessage& tf){
     int transform_ok;
     
@@ -96,6 +129,14 @@ void check1_callBack(const ros::TimerEvent& event){
             //cosa faccio ora che sono arrivato al goal ? 
             //idea : 
             // verifico se questo devo prendere il pacco o se lo ho portato -> agisco di consegueza
+
+            // if(current_position[0]!=50.84 && current_position[1]!=11.87){
+            //     arrived=0;
+            // }
+            // else {
+            //     arrived = 1;
+            // }
+
             cruising=0;
         }
     }
@@ -121,7 +162,8 @@ int main(int argc,char **argv){
     //non credo utile 
     ros::Rate loop_rate(T);
     
-    ros::Subscriber sub=n.subscribe("new_goal",1000,setGoal_CallBack);
+  //  ros::Subscriber sub=n.subscribe("new_goal",1000,setGoal_CallBack);
+    sub=n.subscribe("new_goal",1000,setGoal_CallBack);
     ros::Subscriber sub_tf=n.subscribe("tf",1000,position_CallBack);
 
     //due righe di ros timer
@@ -136,6 +178,10 @@ int main(int argc,char **argv){
             pub.publish(new_goal_message);
             message_published=0;
         }
+        // if(current_position[0]!=50.84 && current_position[1]!=11.87 && arrived==1){
+        //     sleep(5);
+        //     pub.publish(home);
+        // }
         ros::spinOnce();
         loop_rate.sleep();
         ++count;

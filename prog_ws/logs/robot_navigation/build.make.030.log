@@ -1,0 +1,27 @@
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target _robot_navigation_generate_messages_check_deps_new_goal
+[ 33%] Built target robot_navigation_generate_messages_py
+[ 33%] Built target robot_navigation_generate_messages_lisp
+[ 44%] Built target robot_navigation_generate_messages_nodejs
+[ 66%] Built target robot_navigation_generate_messages_eus
+[ 77%] Built target robot_navigation_generate_messages_cpp
+[35m[1mScanning dependencies of target Set_Goal[0m
+[ 77%] Built target robot_navigation_generate_messages
+[ 88%] [32mBuilding CXX object CMakeFiles/Set_Goal.dir/src/stack_navigation.cpp.o[0m
+[01m[K/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/src/robot_navigation/src/stack_navigation.cpp:[m[K In function ‘[01m[Kvoid check1_callBack(const ros::TimerEvent&)[m[K’:
+[01m[K/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/src/robot_navigation/src/stack_navigation.cpp:106:23:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Ksubscribe[m[K’ in ‘[01m[Kn[m[K’, which is of non-class type ‘[01m[Ksize_t {aka long unsigned int}[m[K’
+                 sub=n.[01;31m[Ksubscribe[m[K("new_goal",1000,go_home);
+                       [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/src/robot_navigation/src/stack_navigation.cpp:106:49:[m[K [01;31m[Kerror: [m[K‘[01m[Kgo_home[m[K’ was not declared in this scope
+                 sub=n.subscribe("new_goal",1000,[01;31m[Kgo_home[m[K);
+                                                 [01;31m[K^~~~~~~[m[K
+CMakeFiles/Set_Goal.dir/build.make:62: recipe for target 'CMakeFiles/Set_Goal.dir/src/stack_navigation.cpp.o' failed
+make[2]: *** [CMakeFiles/Set_Goal.dir/src/stack_navigation.cpp.o] Error 1
+CMakeFiles/Makefile2:67: recipe for target 'CMakeFiles/Set_Goal.dir/all' failed
+make[1]: *** [CMakeFiles/Set_Goal.dir/all] Error 2
+Makefile:140: recipe for target 'all' failed
+make: *** [all] Error 2

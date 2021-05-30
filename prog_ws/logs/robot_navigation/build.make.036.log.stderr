@@ -1,0 +1,50 @@
+[01m[K/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/src/robot_navigation/src/stack_navigation.cpp:51:1:[m[K [01;31m[Kerror: [m[K‘[01m[Knew_goal_message[m[K’ does not name a type
+ [01;31m[Knew_goal_message[m[K.header.seq=n;
+ [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/src/robot_navigation/src/stack_navigation.cpp:52:1:[m[K [01;31m[Kerror: [m[K‘[01m[Knew_goal_message[m[K’ does not name a type
+ [01;31m[Knew_goal_message[m[K.header.stamp=ros::Time::now();
+ [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/src/robot_navigation/src/stack_navigation.cpp:53:1:[m[K [01;31m[Kerror: [m[K‘[01m[Knew_goal_message[m[K’ does not name a type
+ [01;31m[Knew_goal_message[m[K.header.frame_id="map"; //boh
+ [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/src/robot_navigation/src/stack_navigation.cpp:54:1:[m[K [01;31m[Kerror: [m[K‘[01m[Knew_goal_message[m[K’ does not name a type
+ [01;31m[Knew_goal_message[m[K.pose.position.x=50.84;
+ [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/src/robot_navigation/src/stack_navigation.cpp:55:1:[m[K [01;31m[Kerror: [m[K‘[01m[Knew_goal_message[m[K’ does not name a type
+ [01;31m[Knew_goal_message[m[K.pose.position.y=11.87;
+ [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/src/robot_navigation/src/stack_navigation.cpp:56:1:[m[K [01;31m[Kerror: [m[K‘[01m[Knew_goal_message[m[K’ does not name a type
+ [01;31m[Knew_goal_message[m[K.pose.position.z=0;
+ [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/src/robot_navigation/src/stack_navigation.cpp:57:1:[m[K [01;31m[Kerror: [m[K‘[01m[Knew_goal_message[m[K’ does not name a type
+ [01;31m[Knew_goal_message[m[K.pose.orientation.x=0;
+ [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/src/robot_navigation/src/stack_navigation.cpp:58:1:[m[K [01;31m[Kerror: [m[K‘[01m[Knew_goal_message[m[K’ does not name a type
+ [01;31m[Knew_goal_message[m[K.pose.orientation.y=0;
+ [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/src/robot_navigation/src/stack_navigation.cpp:59:1:[m[K [01;31m[Kerror: [m[K‘[01m[Knew_goal_message[m[K’ does not name a type
+ [01;31m[Knew_goal_message[m[K.pose.orientation.z=0;
+ [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/src/robot_navigation/src/stack_navigation.cpp:60:1:[m[K [01;31m[Kerror: [m[K‘[01m[Knew_goal_message[m[K’ does not name a type
+ [01;31m[Knew_goal_message[m[K.pose.orientation.w=0.02;
+ [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/src/robot_navigation/src/stack_navigation.cpp:62:1:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_position[m[K’ does not name a type
+ [01;31m[Ktarget_position[m[K[0]=50.84;
+ [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/src/robot_navigation/src/stack_navigation.cpp:63:1:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_position[m[K’ does not name a type
+ [01;31m[Ktarget_position[m[K[1]=11.87;
+ [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/src/robot_navigation/src/stack_navigation.cpp:[m[K In function ‘[01m[Kvoid setGoal_CallBack(const new_goal&)[m[K’:
+[01m[K/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/src/robot_navigation/src/stack_navigation.cpp:74:5:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K.[m[K’ token
+     [01;31m[K.[m[Kheader.seq=n;
+     [01;31m[K^[m[K
+[01m[K/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/src/robot_navigation/src/stack_navigation.cpp:75:5:[m[K [01;31m[Kerror: [m[K‘[01m[Knew_goal_messagenew_goal_message[m[K’ was not declared in this scope
+     [01;31m[Knew_goal_messagenew_goal_message[m[K.header.stamp=ros::Time::now();
+     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/src/robot_navigation/src/stack_navigation.cpp:75:5:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Knew_goal_message[m[K’
+     [01;36m[Knew_goal_messagenew_goal_message[m[K.header.stamp=ros::Time::now();
+     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+     [32m[Knew_goal_message[m[K
+make[2]: *** [CMakeFiles/Set_Goal.dir/src/stack_navigation.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Set_Goal.dir/all] Error 2
+make: *** [all] Error 2
