@@ -1,0 +1,29 @@
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target _robot_navigation_generate_messages_check_deps_new_goal
+[ 45%] Built target robot_navigation_generate_messages_nodejs
+[ 63%] Built target robot_navigation_generate_messages_py
+[ 63%] Built target robot_navigation_generate_messages_eus
+[ 63%] Built target robot_navigation_generate_messages_cpp
+[ 63%] Built target robot_navigation_generate_messages_lisp
+[35m[1mScanning dependencies of target pub[0m
+[ 63%] Built target robot_navigation_generate_messages
+[ 72%] [32mBuilding CXX object CMakeFiles/pub.dir/src/pub.cpp.o[0m
+[ 90%] Built target Set_Goal
+[01m[K/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/src/robot_navigation/src/pub.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/src/robot_navigation/src/pub.cpp:64:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal[m[K’ was not declared in this scope
+       chatter_pub.publish([01;31m[Kgoal[m[K);
+                           [01;31m[K^~~~[m[K
+[01m[K/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/src/robot_navigation/src/pub.cpp:64:27:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kpowl[m[K’
+       chatter_pub.publish([01;36m[Kgoal[m[K);
+                           [01;36m[K^~~~[m[K
+                           [32m[Kpowl[m[K
+CMakeFiles/pub.dir/build.make:62: recipe for target 'CMakeFiles/pub.dir/src/pub.cpp.o' failed
+make[2]: *** [CMakeFiles/pub.dir/src/pub.cpp.o] Error 1
+CMakeFiles/Makefile2:266: recipe for target 'CMakeFiles/pub.dir/all' failed
+make[1]: *** [CMakeFiles/pub.dir/all] Error 2
+Makefile:140: recipe for target 'all' failed
+make: *** [all] Error 2

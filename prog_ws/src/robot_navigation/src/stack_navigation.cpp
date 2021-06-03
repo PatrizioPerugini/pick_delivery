@@ -30,6 +30,8 @@
 //     float64 w
 
 
+
+
 int T=1;
 geometry_msgs::PoseStamped new_goal_message;
 geometry_msgs::PoseStamped home;
@@ -152,6 +154,8 @@ void check2_callBack(const ros::TimerEvent& event){
         }
     }  
 }
+
+
 
 int main(int argc,char **argv){
     ros::init(argc,argv,"Set_Goal"); // init del nodo 

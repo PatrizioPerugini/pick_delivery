@@ -7,6 +7,7 @@
 /home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/build/robot_navigation/CMakeFiles/robot_navigation_geneus.dir
 /home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/build/robot_navigation/CMakeFiles/robot_navigation_generate_messages_eus.dir
 /home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/build/robot_navigation/CMakeFiles/robot_navigation_gencpp.dir
+/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/build/robot_navigation/CMakeFiles/pub.dir
 /home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/build/robot_navigation/CMakeFiles/robot_navigation_generate_messages.dir
 /home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/build/robot_navigation/CMakeFiles/actionlib_generate_messages_py.dir
 /home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/build/robot_navigation/CMakeFiles/test.dir

@@ -246,6 +246,19 @@ robot_navigation_gencpp/fast:
 .PHONY : robot_navigation_gencpp/fast
 
 #=============================================================================
+# Target rules for targets named pub
+
+# Build rule for target.
+pub: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pub
+.PHONY : pub
+
+# fast build rule for target.
+pub/fast:
+	$(MAKE) -f CMakeFiles/pub.dir/build.make CMakeFiles/pub.dir/build
+.PHONY : pub/fast
+
+#=============================================================================
 # Target rules for targets named robot_navigation_generate_messages
 
 # Build rule for target.
@@ -908,6 +921,33 @@ gtest/fast:
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
 
+src/pub.o: src/pub.cpp.o
+
+.PHONY : src/pub.o
+
+# target to build an object file
+src/pub.cpp.o:
+	$(MAKE) -f CMakeFiles/pub.dir/build.make CMakeFiles/pub.dir/src/pub.cpp.o
+.PHONY : src/pub.cpp.o
+
+src/pub.i: src/pub.cpp.i
+
+.PHONY : src/pub.i
+
+# target to preprocess a source file
+src/pub.cpp.i:
+	$(MAKE) -f CMakeFiles/pub.dir/build.make CMakeFiles/pub.dir/src/pub.cpp.i
+.PHONY : src/pub.cpp.i
+
+src/pub.s: src/pub.cpp.s
+
+.PHONY : src/pub.s
+
+# target to generate assembly for a file
+src/pub.cpp.s:
+	$(MAKE) -f CMakeFiles/pub.dir/build.make CMakeFiles/pub.dir/src/pub.cpp.s
+.PHONY : src/pub.cpp.s
+
 src/stack_navigation.o: src/stack_navigation.cpp.o
 
 .PHONY : src/stack_navigation.o
@@ -950,6 +990,7 @@ help:
 	@echo "... robot_navigation_geneus"
 	@echo "... robot_navigation_generate_messages_eus"
 	@echo "... robot_navigation_gencpp"
+	@echo "... pub"
 	@echo "... robot_navigation_generate_messages"
 	@echo "... actionlib_generate_messages_py"
 	@echo "... test"
@@ -1005,6 +1046,9 @@ help:
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
+	@echo "... src/pub.o"
+	@echo "... src/pub.i"
+	@echo "... src/pub.s"
 	@echo "... src/stack_navigation.o"
 	@echo "... src/stack_navigation.i"
 	@echo "... src/stack_navigation.s"

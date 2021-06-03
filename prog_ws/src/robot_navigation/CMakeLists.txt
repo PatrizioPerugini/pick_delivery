@@ -213,3 +213,7 @@ include_directories(
 add_executable(Set_Goal src/stack_navigation.cpp)
 target_link_libraries(Set_Goal ${catkin_LIBRARIES})
 add_dependencies(Set_Goal robot_navigation_generate_messages_cpp)
+
+add_executable(pub src/pub.cpp)
+target_link_libraries(pub ${catkin_LIBRARIES})
+add_dependencies(pub robot_navigation_generate_messages_cpp)
