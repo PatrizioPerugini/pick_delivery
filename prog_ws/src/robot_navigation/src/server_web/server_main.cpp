@@ -61,17 +61,17 @@ static int callback_dumb_increment( //struct libwebsocket_context * this_context
 
 
   case LWS_CALLBACK_RECEIVE: {
-     int res;
-     //creazione fifo  in writeonly
+      int res;
+    //  //creazione fifo  in writeonly
 
-     unlink(fifo);
+    //   unlink(fifo);
 
-     res=mkfifo(fifo,0666);
+    //   res=mkfifo(fifo,0666);
     
-    if(res==-1){
-      printf("errore creazione fifo\n");
-      return EXIT_FAILURE;
-    }
+    //  if(res==-1){
+    //    printf("errore creazione fifo\n");
+    //    return EXIT_FAILURE;
+    //  }
       printf("lws callback received\n");
       char *buf = (char*) malloc((sizeof(char)*len)+1);
       strncpy(buf,(char*)in,len);
@@ -101,10 +101,7 @@ static int callback_dumb_increment( //struct libwebsocket_context * this_context
         }
       }
       close(fd);
-      if(unlink(fifo)==-1){
-        printf("unlink");
-        return EXIT_FAILURE;
-      }
+     
      
       printf("coordinata in server main of x is %f\n",coord_partenza[0]);
       
@@ -133,6 +130,20 @@ int webServerCreate(){
   struct lws_context *context;
   struct lws_context_creation_info info;
 
+
+  //creazione fifo 
+
+   int res;
+  //    //creazione fifo  in writeonly
+
+   unlink(fifo);
+  
+   res=mkfifo(fifo,0666);
+    
+     if(res==-1){
+       printf("errore creazione fifo\n");
+       return EXIT_FAILURE;
+     }
 
   memset(&info, 0, sizeof info);
 
@@ -196,6 +207,11 @@ int webServerCreate(){
   }
 
   lws_context_destroy(context);
+
+  // if(unlink(fifo)==-1){
+  //       printf("unlink");
+  //       return EXIT_FAILURE;
+  // }
 
   return 0;
 
