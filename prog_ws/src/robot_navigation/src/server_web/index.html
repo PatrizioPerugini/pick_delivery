@@ -1,28 +1,49 @@
 <html>
     <head>
-        <title>prova web server</title>
+        <title>pick and delivery</title>
         <script type="text/javascript" lang="javascript"
         src="index.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <link rel="stylesheet" href="style.css" >
     </head>
     <body>
-        <h1>Piattaforma di pick and delivery</h1>
+        <h1 text>Piattaforma di pick and delivery</h1>
        
-       <!--A1 A2 A3 A4 A5 B1 B2 B3-->
+        
+       <!--A1 A2 A3 A4 A5 B1 B2 B3 se non funziona type password rimettere text-->
       
        <div id="login">
-
-        inserire nome :
+        <h3>Solo gli utenti registrati possono usufruire del servizio, 
+            inserire nome e password prima di proseguire
+        </h3>
+      
+<!--
+        <img src="https://i.pinimg.com/originals/1f/e1/bf/1fe1bfbb34f11430f68290b0852d2fd5.png"
+        style="width: 90px; height: 100px; margin: 0px;">
+        
+        nome:
         <input type="text" id="nome" required>
-        inserire password:
-        <input type="text" id="password" required>
-
-        <button id="send_login" onclick="return login()">entra</button>
+        <br>
+        password:
+        <input type="password" id="password" required>
+        <br>
+-->
+       <div class="insert">
+          <label for="nome">Username:</label><br>
+          <input type="text" id="nome" name="nome"><br>
+          <label for="password">Password:</label><br>
+          <input type="password" id="password" name="password"><br>
+          <button id="send_login" onclick="return login()">entra</button>
+        </div>
        </div> 
 
+      
        <div id="pick">
-       <label for="venire">Dove devo venire:</label>
+       
+       
+       
+       
+        <label for="venire">Dove devo venire:</label>
 
        <select name="venire" id="venire">
          <option value="A1">A1</option>

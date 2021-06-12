@@ -1,11 +1,23 @@
 body{
-   
-    
+   background-image: url("https://www.wecanjob.it/moduli/output_immagine.php?id=4180");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #pick{
     display:none;
+    text-align:center;
 }
 #login{
     display:block;
+    
+}
+.insert{
+    margin-left: 40%;
+}
+h1{
+    text-align:center;
+}
+h3{
+    text-align:center;
 }
