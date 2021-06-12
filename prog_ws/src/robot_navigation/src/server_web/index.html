@@ -4,18 +4,57 @@
         <script type="text/javascript" lang="javascript"
         src="index.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="style.css" >
     </head>
     <body>
         <h1>Piattaforma di pick and delivery</h1>
        
-       
-       
+       <!--A1 A2 A3 A4 A5 B1 B2 B3-->
+      
+       <div id="login">
+
+        inserire nome :
+        <input type="text" id="nome" required>
+        inserire password:
+        <input type="text" id="password" required>
+
+        <button id="send_login" onclick="return login()">entra</button>
+       </div> 
+
+       <div id="pick">
+       <label for="venire">Dove devo venire:</label>
+
+       <select name="venire" id="venire">
+         <option value="A1">A1</option>
+         <option value="A2">A2</option>
+         <option value="A3">A3</option>
+         <option value="A4">A4</option>
+         <option value="A5">A5</option>
+         <option value="B1">B1</option>
+         <option value="B2">B2</option>
+         <option value="B3">B3</option>
+       </select>
+       <label for="andare">Dove devo andare:</label>
+
+       <select name="andare" id="andare">
+         <option value="A1">A1</option>
+         <option value="A2">A2</option>
+         <option value="A3">A3</option>
+         <option value="A4">A4</option>
+         <option value="A5">A5</option>
+         <option value="B1">B1</option>
+         <option value="B2">B2</option>
+         <option value="B3">B3</option>
+       </select>
+
+<!--
         dove devo venire?
         <input type="text" id="venire" >
         dove devo andare?
         <input type="text" id="andare" >
-
+-->
         
         <button id="send" onclick="return vai()">conferma</button> 
+    </div>
     </body>
 </html>

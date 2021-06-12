@@ -1,1 +1,1 @@
-/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/devel/./cmake.lock 23
+/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/devel/./cmake.lock 24

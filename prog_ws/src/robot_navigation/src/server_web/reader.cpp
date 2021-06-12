@@ -169,3 +169,56 @@ return coord_arrivo;
     
     
  }
+
+
+int get_login(char* nome,char* password){
+    if(connection_db()==0){
+        exit(EXIT_FAILURE);
+    }
+
+    int ris=0;
+
+    string query = "select * from utenti where nome=";
+    string name = nome;
+    string query2="and password=";
+    string passwd=password; 
+    string logg = query +"'"+name+"'"+query2+"'" +passwd + "'" ;
+    const char *c = logg.c_str();
+
+     printf("reading login\n");
+     printf("%s\n", c);
+    
+    if (mysql_query(con,(const char*)c)) {
+      //finish_with_error(con);
+      fprintf(stderr, "mysql_query() failed\n");
+      exit(EXIT_FAILURE);
+  }
+
+  
+    MYSQL_RES *result = mysql_store_result(con);
+  if (result == NULL) {
+      //finish_with_error(con);
+      fprintf(stderr, "mysql_store_result() failed\n");
+      exit(EXIT_FAILURE);
+  }
+
+  int num_fields = mysql_num_fields(result);
+  MYSQL_ROW row;
+  while ((row = mysql_fetch_row(result))) {
+      for(int i = 0; i < num_fields; i++) {
+         ris++;
+          printf("%s ", row[i] ? row[i] : "NULL");
+      }
+          printf("\n");
+  }
+ 
+    mysql_free_result(result);
+    mysql_close(con);
+     
+     if(ris==0) return 0;
+
+     return 1;
+   
+
+
+}

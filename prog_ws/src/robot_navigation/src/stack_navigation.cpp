@@ -72,10 +72,13 @@ ros::Subscriber sub;
 
 void setGoal_CallBack(const robot_navigation::new_goal& new_goal){
     
+    if(cruising!=1){ 
+
+
     //setto la nuova posizione nella quale il robot dovrà andare
     new_goal_message.header.seq=n;
     new_goal_message.header.stamp=ros::Time::now();
-    new_goal_message.header.frame_id="map"; //boh
+    new_goal_message.header.frame_id="map"; 
    
     new_goal_message.pose.position.x=new_goal.x;
     new_goal_message.pose.position.y=new_goal.y;
@@ -94,6 +97,7 @@ void setGoal_CallBack(const robot_navigation::new_goal& new_goal){
     cruising=1;
     arrived=0;
     message_published=1;
+    }
 
 }
 

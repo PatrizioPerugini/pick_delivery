@@ -62,25 +62,17 @@ static int callback_dumb_increment( //struct libwebsocket_context * this_context
 
   case LWS_CALLBACK_RECEIVE: {
       int res;
-    //  //creazione fifo  in writeonly
-
-    //   unlink(fifo);
-
-    //   res=mkfifo(fifo,0666);
     
-    //  if(res==-1){
-    //    printf("errore creazione fifo\n");
-    //    return EXIT_FAILURE;
-    //  }
       printf("lws callback received\n");
       char *buf = (char*) malloc((sizeof(char)*len)+1);
       strncpy(buf,(char*)in,len);
       buf[len] = '\0';
+
+//controllo con if len
+      if(len < 7){ 
       
       char * src = strtok(buf, ",");//src = a1
       char * dst =strtok(NULL,",");
-      // char* dest= *buf.split(',');
-       printf("hello from main\n");
       
       float* coord_arrivo;
       float* coord_partenza;
@@ -100,16 +92,52 @@ static int callback_dumb_increment( //struct libwebsocket_context * this_context
           return EXIT_FAILURE;
         }
       }
-      close(fd);
      
+
+    //////////////prova
+    sleep(5);
+    for(i=0;i<3;i++){
+        if(write(fd,&coord_arrivo[i],sizeof(float))==-1){
+          printf("errore in scrittura fifo fifo\n");
+          return EXIT_FAILURE;
+        }
+    }
+
+    //////////////prova
+      close(fd);
      
       printf("coordinata in server main of x is %f\n",coord_partenza[0]);
       
      // printf("%s\n",buf);
       int size = strlen(buf);
-      lws_write(wsi, (unsigned char*) buf, size, LWS_WRITE_TEXT); 
+   //   lws_write(wsi, (unsigned char*) buf, size, LWS_WRITE_TEXT); 
       //free(buf);
-      
+      }
+      else{
+        char* nome = strtok(buf, ",");//src = a1
+        char* password =strtok(NULL,",");
+        int loggato;
+        loggato=get_login(nome,password);
+        if( (loggato)==1){
+          //login ok
+         std::string s= "1\0";
+         char* log=(char*)malloc(sizeof(char)*2);
+         strcpy(log,s.c_str());
+
+          lws_write(wsi, (unsigned char*) log, 2, LWS_WRITE_TEXT);
+        }
+        else{
+          //utente non presente
+           std::string s= "0\0";
+              char* log=(char*)malloc(sizeof(char)*2);
+             strcpy(log,s.c_str());
+
+            lws_write(wsi, (unsigned char*) log, 2, LWS_WRITE_TEXT);
+        }
+      }
+
+
+
     }
     break;
 
