@@ -5,11 +5,19 @@ body{
 }
 
 #pick{
+   
     display:none;
+   
+  
     text-align:center;
 }
 #login{
-    display:block;
+   
+   
+     display:block;
+   
+   
+   
     
 }
 .insert{

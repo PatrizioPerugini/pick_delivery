@@ -33,17 +33,20 @@
           <input type="text" id="nome" name="nome"><br>
           <label for="password">Password:</label><br>
           <input type="password" id="password" name="password"><br>
-          <button id="send_login" onclick="return login()">entra</button>
+          <button id="send_login" onclick="return login()">login</button>
         </div>
        </div> 
 
       
        <div id="pick">
        
+       <h3>
+           Il servizio di pick and delivery permette di selezionare una stanza in cui 
+           si deve andare a prelevare il pacco e una stanza per la successiva consegna.
+       </h3>
+      
        
-       
-       
-        <label for="venire">Dove devo venire:</label>
+        <label for="venire">STANZA DOVE PRELEVARE:</label>
 
        <select name="venire" id="venire">
          <option value="A1">A1</option>
@@ -55,7 +58,9 @@
          <option value="B2">B2</option>
          <option value="B3">B3</option>
        </select>
-       <label for="andare">Dove devo andare:</label>
+    
+
+       <label for="andare">STANZA DOVE CONSEGNARE:</label>
 
        <select name="andare" id="andare">
          <option value="A1">A1</option>
@@ -67,6 +72,7 @@
          <option value="B2">B2</option>
          <option value="B3">B3</option>
        </select>
+   
 
 <!--
         dove devo venire?
@@ -74,8 +80,9 @@
         dove devo andare?
         <input type="text" id="andare" >
 -->
-        
+       
         <button id="send" onclick="return vai()">conferma</button> 
+    
     </div>
     </body>
 </html>
