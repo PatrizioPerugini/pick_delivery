@@ -1,0 +1,11 @@
+[01m[K/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/src/robot_navigation/src/stack_navigation.cpp:[m[K In function ‘[01m[Kvoid setGoal_CallBack(const new_goal&)[m[K’:
+[01m[K/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/src/robot_navigation/src/stack_navigation.cpp:91:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::queue<std::vector<float> >[m[K’ has no member named ‘[01m[KisEmpty[m[K’; did you mean ‘[01m[Kempty[m[K’?
+         if(q.[01;31m[KisEmpty[m[K){
+              [01;31m[K^~~~~~~[m[K
+              [32m[Kempty[m[K
+[01m[K/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/src/robot_navigation/src/stack_navigation.cpp:118:40:[m[K [01;31m[Kerror: [m[Kconversion from ‘[01m[Kvoid[m[K’ to non-scalar type ‘[01m[Kstd::vector<float>[m[K’ requested
+             vector<float> to_send=[01;31m[Kq.pop()[m[K;
+                                   [01;31m[K~~~~~^~[m[K
+make[2]: *** [CMakeFiles/Set_Goal.dir/src/stack_navigation.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Set_Goal.dir/all] Error 2
+make: *** [all] Error 2

@@ -46,7 +46,7 @@ static int callback_http(
   return 0;
 }
 
-static int callback_dumb_increment( //struct libwebsocket_context * this_context,
+static int callback_pick( //struct libwebsocket_context * this_context,
                                   struct lws *wsi,
                                   enum lws_callback_reasons reason,
                                   void *user, void *in, size_t len) {
@@ -94,7 +94,7 @@ static int callback_dumb_increment( //struct libwebsocket_context * this_context
       }
      
 
-    //////////////prova
+    
     sleep(5);
     for(i=0;i<3;i++){
         if(write(fd,&coord_arrivo[i],sizeof(float))==-1){
@@ -103,7 +103,7 @@ static int callback_dumb_increment( //struct libwebsocket_context * this_context
         }
     }
 
-    //////////////prova
+    
       close(fd);
      
       printf("coordinata in server main of x is %f\n",coord_partenza[0]);
@@ -185,7 +185,7 @@ int webServerCreate(){
     },
     {
       .name = "pick-protocol", // protocol name - very important!
-      .callback = callback_dumb_increment,   // callback
+      .callback = callback_pick,   // callback
       .per_session_data_size=0,                          // we don't use any per session data
       .rx_buffer_size=0
     },

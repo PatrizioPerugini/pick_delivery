@@ -1,0 +1,10 @@
+[01m[K/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/src/robot_navigation/src/stack_navigation.cpp:[m[K In function ‘[01m[Kvoid setGoal_CallBack(const new_goal&)[m[K’:
+[01m[K/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/src/robot_navigation/src/stack_navigation.cpp:87:75:[m[K [01;31m[Kerror: [m[K‘[01m[Ky[m[K’ was not declared in this scope
+         printf("posizione storata in coordinata y : %f \n",store_position[[01;31m[Ky[m[K]);
+                                                                           [01;31m[K^[m[K
+[01m[K/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/src/robot_navigation/src/stack_navigation.cpp:130:13:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Knew_goal_message[m[K’
+             [01;31m[Knew_goal_message[m[K.header.seq=n;
+             [01;31m[K^~~~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/Set_Goal.dir/src/stack_navigation.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Set_Goal.dir/all] Error 2
+make: *** [all] Error 2

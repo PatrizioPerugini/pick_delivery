@@ -49,6 +49,8 @@ robot_navigation/new_goal.h
 -
 vector
 -
+queue
+-
 
 /opt/ros/melodic/include/geometry_msgs/Point.h
 string

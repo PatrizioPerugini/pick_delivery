@@ -1,0 +1,11 @@
+[01m[K/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/src/robot_navigation/src/stack_navigation.cpp:[m[K In function ‘[01m[Kvoid setGoal_CallBack(const new_goal&)[m[K’:
+[01m[K/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/src/robot_navigation/src/stack_navigation.cpp:122:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kprintln[m[K’ was not declared in this scope
+             [01;31m[Kprintln[m[K("coordinata x è %f", xs );
+             [01;31m[K^~~~~~~[m[K
+[01m[K/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/src/robot_navigation/src/stack_navigation.cpp:122:13:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kprintf[m[K’
+             [01;36m[Kprintln[m[K("coordinata x è %f", xs );
+             [01;36m[K^~~~~~~[m[K
+             [32m[Kprintf[m[K
+make[2]: *** [CMakeFiles/Set_Goal.dir/src/stack_navigation.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Set_Goal.dir/all] Error 2
+make: *** [all] Error 2

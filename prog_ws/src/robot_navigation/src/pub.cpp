@@ -66,14 +66,14 @@ int main(int argc, char **argv)
 
     if(coords[0]>1 && coords[1]>1){
     
-    ROS_INFO("stampo la coordinata x ricevuta dal web client:/n");
+    ROS_INFO("stampo la coordinata x ricevuta dal web client:\n");
     printf("coordinata dal pub :%f\n",coords[0]);
     printf("coordinata dal pub :%f\n",coords[1]);
     printf("coordinata dal pub :%f\n",coords[2]);
 
     for(i=0;i<2;i++){
       chatter_pub.publish(goal);
-      sleep(5);
+      sleep(7);
     }
       
       

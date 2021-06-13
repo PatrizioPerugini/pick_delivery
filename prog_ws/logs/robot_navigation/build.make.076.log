@@ -1,0 +1,17 @@
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target _robot_navigation_generate_messages_check_deps_new_goal
+[  9%] Built target robot_navigation_generate_messages_cpp
+[ 18%] Built target robot_navigation_generate_messages_nodejs
+[ 36%] Built target robot_navigation_generate_messages_py
+[ 45%] Built target robot_navigation_generate_messages_lisp
+[ 63%] Built target robot_navigation_generate_messages_eus
+[35m[1mScanning dependencies of target Set_Goal[0m
+[ 72%] [32mBuilding CXX object CMakeFiles/Set_Goal.dir/src/stack_navigation.cpp.o[0m
+[ 90%] Built target pub
+[ 90%] Built target robot_navigation_generate_messages
+[100%] [32m[1mLinking CXX executable /home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/devel/.private/robot_navigation/lib/robot_navigation/Set_Goal[0m
+[100%] Built target Set_Goal

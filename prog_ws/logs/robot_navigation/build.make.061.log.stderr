@@ -1,0 +1,15 @@
+[01m[K/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/src/robot_navigation/src/stack_navigation.cpp:[m[K In function ‘[01m[Kvoid setGoal_CallBack(const new_goal&)[m[K’:
+[01m[K/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/src/robot_navigation/src/stack_navigation.cpp:85:9:[m[K [01;31m[Kerror: [m[Kreference to ‘[01m[Kqueue[m[K’ is ambiguous
+         [01;31m[Kqueue[m[K.push(store_position);
+         [01;31m[K^~~~~[m[K
+[01m[K/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/src/robot_navigation/src/stack_navigation.cpp:53:27:[m[K [01;36m[Knote: [m[Kcandidates are: std::queue<std::vector<float> > queue
+ queue<std::vector<float>> [01;36m[Kqueue[m[K;
+                           [01;36m[K^~~~~[m[K
+In file included from [01m[K/usr/include/c++/7/queue:64:0[m[K,
+                 from [01m[K/home/patrizio/Desktop/pick_delivery/pick_delivery/prog_ws/src/robot_navigation/src/stack_navigation.cpp:15[m[K:
+[01m[K/usr/include/c++/7/bits/stl_queue.h:96:11:[m[K [01;36m[Knote: [m[K                template<class _Tp, class _Sequence> class std::queue
+     class [01;36m[Kqueue[m[K
+           [01;36m[K^~~~~[m[K
+make[2]: *** [CMakeFiles/Set_Goal.dir/src/stack_navigation.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Set_Goal.dir/all] Error 2
+make: *** [all] Error 2
